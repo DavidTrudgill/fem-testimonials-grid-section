@@ -115,19 +115,19 @@ body {
 }
 
 .card-1--image {
-    background-image: url(/images/image-daniel.jpg);
+    background-image: url(images/image-daniel.jpg);
     border: 2px solid var(--image-border);
 }
 .card-2--image {
-    background-image: url(/images/image-jonathan.jpg);
+    background-image: url( images/image-jonathan.jpg);
 }
 .card-3--image {
-    background-image: url(/images/image-jeanette.jpg);
+    background-image: url(images/image-jeanette.jpg);
 }
 .card-4--image {
-    background-image: url(/images/image-patrick.jpg);
+    background-image: url(images/image-patrick.jpg);
     border: 2px solid var(--image-border);
 }
 .card-5--image {
-    background-image: url(/images/image-kira.jpg);
+    background-image: url(images/image-kira.jpg);
 }
