@@ -1,0 +1,133 @@
+:root {
+  /* primary */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --dark-greyish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --image-border: #A775F1;
+
+/* neutral */
+  --light-grey: hsl(0, 0%, 81%);
+  --light-greyish-blue: hsl(210, 46%, 95%);
+
+  /* font weights */
+  --reg: 500;
+  --med: 600;
+
+  /* font sizes */
+  --light: 0.6875rem;
+  --body: 0.8125rem;
+  --strong: 1.25rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+
+.card {
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1.4375rem;
+}
+
+.card__header-grid {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: min-content, min-content;
+    grid-template-rows: min-content, min-content;
+    padding-bottom: 1.5em;
+}
+
+.card__name,
+.card__under-name,
+.card__pull-quote,
+.card__quote {
+    color: var(--white);
+    
+}
+.card--white {
+    color: var(--dark-blackish-blue);
+}
+
+.card__name, .card__quote {
+    font-size: var(--body);
+}
+
+.card__name {
+    grid-column: 2 / 3;
+}
+
+.card__under-name {
+    font-size: var(--light);
+    opacity: 50%;
+    grid-column: 2 / 3;
+    grid-row: 2 /3;
+}
+
+
+.card__pull-quote {
+    font-size: var(--strong);
+    font-weight: var(--med);
+    padding-bottom: 1em;
+}
+
+.card__quote {
+    line-height: 1.125rem;
+    opacity: 70%;
+}
+
+.card-1 {
+    background-color: var(--moderate-violet);
+}
+
+.card-2 {
+    background-color: var(--dark-greyish-blue);
+}
+.card-3 {
+    background-color: var(--white);
+}
+.card-4 {
+    background-color: var(--dark-blackish-blue);
+}
+.card-5--white {
+    background-color: var(--white);
+}
+
+
+.card__image {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin-right: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; 
+}
+
+.card-1--image {
+    background-image: url(/images/image-daniel.jpg);
+    border: 2px solid var(--image-border);
+}
+.card-2--image {
+    background-image: url(/images/image-jonathan.jpg);
+}
+.card-3--image {
+    background-image: url(/images/image-jeanette.jpg);
+}
+.card-4--image {
+    background-image: url(/images/image-patrick.jpg);
+    border: 2px solid var(--image-border);
+}
+.card-5--image {
+    background-image: url(/images/image-kira.jpg);
+}
